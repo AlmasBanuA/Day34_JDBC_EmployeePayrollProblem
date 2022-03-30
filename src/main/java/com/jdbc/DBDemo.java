@@ -1,19 +1,20 @@
 package com.jdbc;
 
-/**
- * UC1:- Ability to create a payroll service database and have java program
- * connect to database
- */
 import java.sql.Connection;
 import java.sql.Driver;
 import java.sql.DriverManager;
 import java.util.Enumeration;
 
 /**
- * @author Almas
+ * UC1:- Ability to create a payroll service database and have java program
+ * connect to database 
+ * UC2:- Ability for Employee Payroll Service to retrieve the Employee Payroll
+ * from the Database
+ * 
+ * @author user -Almas
  */
-public class EmployeePayroll {
 
+public class DBDemo {
 	/**
 	 * Main method for manipulation odf JDBC
 	 * 
@@ -46,14 +47,12 @@ public class EmployeePayroll {
 		 * try and catch block to handle the exceptions
 		 */
 		try {
-			/**
-			 * finding the driver class in the classpath Registering MySQL driver
-			 */
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			System.out.println("Driver loaded");
 		} catch (ClassNotFoundException e) {
 			throw new IllegalStateException("Cannot find driver in classpath");
 		}
+
 		listDrivers();
 		try {
 			System.out.println("Connecting to database: " + jdbcURL);
