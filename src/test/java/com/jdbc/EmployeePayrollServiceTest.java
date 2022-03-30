@@ -107,6 +107,6 @@ public class EmployeePayrollServiceTest {
 		Map<String, Double> averageSalaryByGender = employeePayrollService.readAverageSalaryByGender(IOService.DB_IO);
 		System.out.println(averageSalaryByGender);
 		assertTrue(
-				averageSalaryByGender.get("M").equals(2000000.00) && averageSalaryByGender.get("F").equals(3000000.00));
+				averageSalaryByGender.get("M").equals(250000.0) && averageSalaryByGender.get("F").equals(3000000.0));
 	}
 }
