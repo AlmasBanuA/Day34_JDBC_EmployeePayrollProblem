@@ -13,6 +13,8 @@ import java.util.Enumeration;
  * UC3:- Ability to update the salary and sync it with database
  * UC4:- Ability to update the salary and sync it with Database using JDBC 
  * PreparedStatement and Refactor UC4
+ * UC5:- Ability to retrieve all employees who have joined in a particular data 
+ * range from the payroll service database
  * 
  * 
  * @author user -Almas
