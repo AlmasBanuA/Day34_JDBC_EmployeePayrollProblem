@@ -11,6 +11,8 @@ import java.util.Enumeration;
  * UC2:- Ability for Employee Payroll Service to retrieve the Employee Payroll
  * from the Database
  * UC3:- Ability to update the salary and sync it with database
+ * UC4:- Ability to update the salary and sync it with Database using JDBC 
+ * PreparedStatement
  * 
  * @author user -Almas
  */

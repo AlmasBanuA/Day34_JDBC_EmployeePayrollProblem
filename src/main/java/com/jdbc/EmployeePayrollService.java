@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import com.jdbc.EmployeePayrollDBService.StatementType;
 import com.jdbc.EmployeePayrollException.ExceptionType;
 
 public class EmployeePayrollService {
@@ -11,6 +12,9 @@ public class EmployeePayrollService {
 		CONSOLE_IO, FILE_IO, DB_IO, REST_IO
 	}
 
+	/**
+	 * To get the list of employee payroll from the database
+	 */
 	public List<EmployeePayrollData> employeePayrollList;
 	private EmployeePayrollDBService employeePayrollDBService;
 
@@ -86,12 +90,14 @@ public class EmployeePayrollService {
 	}
 
 	/**
+	 * updating EmployeeSalary from the database
+	 * 
 	 * @param name
 	 * @param salary
 	 * @throws EmployeePayrollException
 	 */
-	public void updateEmployeeSalary(String name, double salary) throws EmployeePayrollException {
-		int result = employeePayrollDBService.updateEmployeeData(name, salary);
+	public void updateEmployeeSalary(String name, double salary, StatementType type) throws EmployeePayrollException {
+		int result = employeePayrollDBService.updateEmployeeData(name, salary, type);
 		EmployeePayrollData employeePayrollData = null;
 		if (result == 0)
 			throw new EmployeePayrollException(ExceptionType.UPDATE_FAIL, "Update Failed");
@@ -103,6 +109,8 @@ public class EmployeePayrollService {
 	}
 
 	/**
+	 * getting the employeepayroll data
+	 * 
 	 * @param name
 	 * @return Employee corresponding to name
 	 */
@@ -113,6 +121,8 @@ public class EmployeePayrollService {
 	}
 
 	/**
+	 * method to check payroll is synced with databse
+	 * 
 	 * @param name
 	 * @return true if data is in sync
 	 */
