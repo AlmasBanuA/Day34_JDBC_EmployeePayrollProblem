@@ -10,6 +10,7 @@ import java.util.Enumeration;
  * connect to database 
  * UC2:- Ability for Employee Payroll Service to retrieve the Employee Payroll
  * from the Database
+ * UC3:- Ability to update the salary and sync it with database
  * 
  * @author user -Almas
  */
