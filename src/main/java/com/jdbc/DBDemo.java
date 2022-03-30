@@ -15,6 +15,7 @@ import java.util.Enumeration;
  * PreparedStatement and Refactor UC4
  * UC5:- Ability to retrieve all employees who have joined in a particular data 
  * range from the payroll service database
+ * UC6:- Ability to find sum, average, min, max and number of male and female employees
  * 
  * 
  * @author user -Almas
