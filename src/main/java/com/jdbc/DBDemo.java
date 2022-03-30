@@ -12,7 +12,8 @@ import java.util.Enumeration;
  * from the Database
  * UC3:- Ability to update the salary and sync it with database
  * UC4:- Ability to update the salary and sync it with Database using JDBC 
- * PreparedStatement
+ * PreparedStatement and Refactor UC4
+ * 
  * 
  * @author user -Almas
  */
